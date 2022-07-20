@@ -1,5 +1,14 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 8px;
+  color: hsl(0, 0%, 17%);;
+  background-color: hsl(0, 0%, 59%);;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 p,
 h1 {
@@ -7,9 +16,10 @@ h1 {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   margin: 0;
 }
+
 .top-section {
   background-image: url(/src/images/pattern-bg.png);
   height: 40vh;
@@ -44,7 +54,7 @@ form {
 
 .submit-btn {
   padding: 14px 12px;
-  background-color:hsl(0, 0%, 17%);
+  background-color: hsl(0, 0%, 17%);
   width: 18%;
   display: flex;
   align-items: center;
@@ -63,9 +73,13 @@ form {
   height: 100vh;
 }
 
-#map { 
+#map {
   height: 100vh;
-  z-index: -100;
+}
+
+.leaflet-top.leaflet-left,
+.leaflet-control-attribution {
+  display: none;
 }
 
 .data-container,
@@ -76,6 +90,7 @@ form {
 }
 
 .data-container {
+  z-index: 1000;
   background-color: white;
   gap: 30px;
   padding: 20px;
@@ -93,11 +108,11 @@ form {
 }
 
 .pair-name {
-  color:hsl(0, 0%, 59%);
+  color: hsl(0, 0%, 59%);
   font-size: 14px;
 }
 
 .pair-data {
-  color:hsl(0, 0%, 17%);
+  color: hsl(0, 0%, 17%);
   font-size: 20px;
 }
