@@ -4,8 +4,9 @@
   word-spacing: 1px;
   text-align: center;
   padding: 8px;
-  color: hsl(0, 0%, 17%);;
+  color: hsl(0, 0%, 17%);
   background-image: url(/src/images/pattern-bg.png);
+  background-size: cover;
 }
 
 .attribution a {
@@ -29,6 +30,7 @@ body {
 
 .top-section {
   background-image: url(/src/images/pattern-bg.png);
+  background-size: cover;
   height: 50vh;
   display: flex;
   flex-direction: column;
