@@ -1,6 +1,7 @@
 import './style.css';
 import Pattern from './images/icon-arrow.svg' 
 import locate from './locate'
+import createMap from './leaflet'
 const patterImg = document.querySelector('.arrow-icon')
 const form = document.querySelector('form');
 const input = document.querySelector('input');
@@ -15,11 +16,3 @@ form.addEventListener('submit', (e) => {
   e.preventDefault()
     locate(input.value)
 })
-
-var map = L.map('map').setView([51.505, -0.09], 13);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map);
-
-
