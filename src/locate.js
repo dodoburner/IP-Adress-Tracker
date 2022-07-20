@@ -4,9 +4,9 @@ const timezone = document.querySelector('.timezone')
 const isp = document.querySelector('.isp')
 
 const locate = async (adress) => {
-  let response = await fetch(`https://geo.ipify.org/api/v2/country?apiKey=at_vaX1O20m0nZWgzFhUoJNWRUb5YDdt&ipAddress=${adress}`)
+  let response = await fetch(`https://geo.ipify.org/api/v2/country?apiKey=at_vaX1O20m0nZWgzFhUoJNWRUb5YDdt${adress ? '&ipAddress=' + adress : ''}`)
   let data = await response.json()
-  console.log(data)
+  
   ip.innerHTML = data.ip
   location.innerHTML = `${data.location.region} ${data.location.country}`
   timezone.innerHTML = `UTC ${data.location.timezone}`
