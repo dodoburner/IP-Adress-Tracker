@@ -3,29 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+  <section class="top-section">
+    <h1>
+      IP Address Tracker
+    </h1>
   
+    <form action="">
+      <input class="ip-input" placeholder="  Search for any IP address or domain" type="text" pattern="^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?!$)|$)){4}$">
+      <button class="submit-btn">
+        <img class="arrow-icon">
+      </button>
+    </form>
+  </section>
+
+  <section class="bottom-section">
+    <div class="data-container">
+      <div class="pair">
+        <p class="pair-name">IP ADDRESS</p>
+        <p class="pair-data">192.212.345.767</p>
+      </div>
+  
+      <div class="pair">
+        <p class="pair-name">LOCATION</p>
+        <p class="pair-data">Brooklyn, NY 10001</p>
+      </div>
+  
+      <div class="pair">
+        <p class="pair-name">TIMEZONE</p>
+        <p class="pair-data">UTC -05:00</p>
+      </div>
+  
+      <div class="pair">
+        <p class="pair-name">ISP</p>
+        <p class="pair-data">SpaceX Starlink</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- UTC add offset value dynamically using the API -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
