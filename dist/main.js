@@ -14,7 +14,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://ip-adress-tracker/./src/index.js?");
+eval("throw new Error(\"Module parse failed: Invalid regular expression flag (12:25)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| form.addEventListener('submit', (e) => {\\n|   e.preventDefault()\\n>   if (input.value.match(/^(?>(?>([a-f0-9]{1,4})(?>:(?1)){7}|(?!(?:.*[a-f0-9](?>:|$)){8,})((?1)(?>:(?1)){0,6})?::(?2)?)|(?>(?>(?1)(?>:(?1)){5}:|(?!(?:.*[a-f0-9]:){6,})(?3)?::(?>((?1)(?>:(?1)){0,4}):)?)?(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])(?>\\\\.(?4)){3}))$/iD)) {\\n|     locate(input.value)\\n|   }\");\n\n//# sourceURL=webpack://ip-adress-tracker/./src/index.js?");
 
 /***/ })
 

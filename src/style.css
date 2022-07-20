@@ -1,0 +1,118 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 8px;
+  color: hsl(0, 0%, 17%);;
+  background-color: hsl(0, 0%, 59%);;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+.top-section {
+  background-image: url(/src/images/pattern-bg.png);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  gap: 30px;
+}
+
+h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  height: 52px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.ip-input {
+  border: none;
+  font-size: 15px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 14px 12px;
+  width: 100%;
+}
+
+.submit-btn {
+  padding: 14px 12px;
+  background-color: hsl(0, 0%, 17%);
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.arrow-icon {
+  width: 10px;
+}
+
+.bottom-section {
+  position: relative;
+  height: 100vh;
+}
+
+#map {
+  height: 100vh;
+}
+
+.leaflet-top.leaflet-left,
+.leaflet-control-attribution {
+  display: none;
+}
+
+.data-container,
+.pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-container {
+  z-index: 1000;
+  background-color: white;
+  gap: 30px;
+  padding: 20px;
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top: -150px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.pair {
+  gap: 10px;
+  font-weight: 500;
+}
+
+.pair-name {
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+
+.pair-data {
+  color: hsl(0, 0%, 17%);
+  font-size: 20px;
+}
