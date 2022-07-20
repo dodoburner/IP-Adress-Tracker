@@ -1,14 +1,21 @@
 .attribution {
   font-size: 11px;
+  font-weight: 500;
+  word-spacing: 1px;
   text-align: center;
   padding: 8px;
   color: hsl(0, 0%, 17%);;
-  background-color: hsl(0, 0%, 59%);;
+  background-image: url(/src/images/pattern-bg.png);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 p,
 h1 {
@@ -22,7 +29,7 @@ body {
 
 .top-section {
   background-image: url(/src/images/pattern-bg.png);
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +47,6 @@ form {
   display: flex;
   height: 52px;
   width: 100%;
-  cursor: pointer;
 }
 
 .ip-input {
@@ -50,6 +56,7 @@ form {
   border-bottom-left-radius: 12px;
   padding: 14px 12px;
   width: 100%;
+  cursor: pointer;
 }
 
 .submit-btn {
@@ -62,6 +69,7 @@ form {
   border: none;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  cursor: pointer;
 }
 
 .arrow-icon {
@@ -95,9 +103,10 @@ form {
   gap: 30px;
   padding: 20px;
   position: absolute;
+  height: 250px;
   left: 25px;
   right: 25px;
-  top: -150px;
+  top: -125px;
   border-radius: 12px;
   height: fit-content;
 }
