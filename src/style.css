@@ -4,8 +4,9 @@
   word-spacing: 1px;
   text-align: center;
   padding: 8px;
-  color: hsl(0, 0%, 17%);;
+  color: hsl(0, 0%, 17%);
   background-image: url(/src/images/pattern-bg.png);
+  background-size: cover;
 }
 
 .attribution a {
@@ -29,7 +30,9 @@ body {
 
 .top-section {
   background-image: url(/src/images/pattern-bg.png);
-  height: 50vh;
+  background-size: cover;
+  height: 40vh;
+  min-height: 275px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,10 +129,20 @@ form {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 376px) {
+ .top-section {
+  height: 38vh;
+ }
+}
+
 @media only screen and (min-width: 550px) {
+  h1 {
+    font-size: 26px;
+    margin-top: 10px;
+  }
   .top-section {
-    height: 35vh;
-    min-height: 200px;
+    height: 34vh;
+    min-height: 250px;
   }
   form {
     max-width: 500px;
